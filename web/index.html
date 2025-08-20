@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Campus Emergency Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Campus Emergency Help</h1>
+    <p>Press the button to alert nearby responders.</p>
+  </header>
+
+  <main>
+    <section class="panic-section">
+      <div class="type-row">
+        <label>Select type:</label>
+        <select id="type">
+          <option value="accident">Accident</option>
+          <option value="harassment">Harassment</option>
+          <option value="theft">Theft</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <textarea id="desc" rows="3" placeholder="Brief description (optional)"></textarea>
+
+      <button id="panic" class="panic-btn">HELP</button>
+      <p class="status" id="status"></p>
+    </section>
+
+    <section class="alerts-section">
+      <h2>Recent Alerts</h2>
+      <div id="alerts"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Demo build. For emergencies, also contact campus security and local authorities.</small>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>
